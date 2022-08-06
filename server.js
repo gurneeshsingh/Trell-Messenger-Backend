@@ -30,7 +30,7 @@ const io = require('socket.io')(server, {
     pingTimeout: 70000,
     cors: {
         // origin of the frontend or the deployed application
-        origin: 'https://trell-messenger-pwa.herokuapp.com'
+        origin: 'https://trellmessengerpwa.netlify.app'
     }
 });
 
