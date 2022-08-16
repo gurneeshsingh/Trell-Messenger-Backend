@@ -41,9 +41,9 @@ io.on('connection', (socket) => {
     // from here we can make connections by using on function of socket that takes a string arg  of the name of what we want to do with that socket and a cb
 
     // first socket defining the setup of a user joining  with their user_id 
-    socket.on('usersetup', (user) => {
+    socket.on('usersetup', (id) => {
         // use join method for a user to join with their id that we get from the frontend
-        socket.join(user?._id)
+        socket.join(id)
         socket.emit("connected")
     });
 
